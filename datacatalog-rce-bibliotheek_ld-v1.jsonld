@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek",
+  "@type": "dcat:Dataset",
+  "dct:title": {
+    "@value": "Bibliotheek RCE (linked open data subset)",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "Een selectie van de bibliotheekcatalogus van de Rijksdienst voor het Cultureel Erfgoed, beschikbaar als Linked Open Data.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:issued": {
+    "@value": "2023-01-01",
+    "@type": "xsd:date"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/nl"
+  },
+  "dcat:landingPage": {
+    "@id": "https://www.cultureelerfgoed.nl/onderwerpen/bibliotheek"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek"
+    },
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+    },
+    "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "dcat:service": {
+    "@type": "dcat:DataService",
+    "dct:title": {
+      "@value": "SPARQL endpoint voor Bibliotheek (LOD-deelset)",
+      "@language": "nl"
+    },
+    "dcat:endpointURL": {
+      "@id": "https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/bibliotheek/sparql"
+    },
+    "dcat:servesDataset": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek"
+    }
+  }
+}

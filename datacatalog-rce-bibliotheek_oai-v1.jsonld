@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/graph/bibliotheek",
+  "@type": "dcat:Dataset",
+  "dct:title": {
+    "@value": "Bibliotheek RCE (volledige collectie via OAI-PMH)",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "De volledige bibliotheekcatalogus van de RCE, beschikbaar via OAI-PMH in oai_dc formaat.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:issued": {
+    "@value": "2023-01-01",
+    "@type": "xsd:date"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/nl"
+  },
+  "dcat:landingPage": {
+    "@id": "https://catalogus.cultureelerfgoed.nl/search/simple"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": {
+      "@id": "https://rce.adlibhosting.com/oaiapi/oai.ashx?verb=ListRecords&set=books&metadataPrefix=oai_dc_book"
+    },
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/XML"
+    },
+    "dct:conformsTo": {
+      "@id": "http://www.openarchives.org/OAI/2.0/"
+    },
+    "dcat:accessService": {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL": {
+        "@id": "https://rce.adlibhosting.com/oaiapi/oai.ashx"
+      },
+      "dct:description": {
+        "@value": "OAI-PMH endpoint voor de bibliotheekcatalogus van de RCE",
+        "@language": "nl"
+      }
+    }
+  }
+}

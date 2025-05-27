@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/cht",
+  "@type": "dcat:Dataset",
+  "dct:title": {
+    "@value": "Cultureel-Historische Thesaurus",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "De Cultureel-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:issued": {
+    "@value": "2021-06-01",
+    "@type": "xsd:date"
+  },
+  "dct:modified": {
+    "@value": "2025-04-29",
+    "@type": "xsd:date"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/nl"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/cht"
+    },
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+    },
+    "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "dcat:service": {
+    "@type": "dcat:DataService",
+    "dct:title": {
+      "@value": "SPARQL endpoint voor Cultureel-Historische Thesaurus (CHT)",
+      "@language": "nl"
+    },
+    "dcat:endpointURL": {
+      "@id": "https://api.linkeddata.cultureelerfgoed.nl/datasets/thesauri/cht/sparql"
+    },
+    "dcat:servesDataset": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/cht"
+    }
+  }
+}

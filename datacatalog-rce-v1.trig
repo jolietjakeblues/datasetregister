@@ -1,0 +1,211 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://linkeddata.cultureelerfgoed.nl/catalog> {
+  <https://linkeddata.cultureelerfgoed.nl/catalog>
+    a dcat:Catalog ;
+    dct:identifier "C7C452E9-B021-432c-B3A7-626EC7068BCB" ;
+    dct:title "RCE Datasetcatalogus"@nl ;
+    dct:description "Catalogus van datasets gepubliceerd door de Rijksdienst voor het Cultureel Erfgoed."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:creator [
+      a foaf:Organization ;
+      foaf:name "Rijksdienst voor het Cultureel Erfgoed" ;
+      foaf:homepage <https://www.cultureelerfgoed.nl>
+    ] ;
+    dcat:contactPoint [
+      a vcard:Organization ;
+      vcard:fn "Rijksdienst voor het Cultureel Erfgoed" ;
+      vcard:hasEmail <mailto:info@cultureelerfgoed.nl> ;
+      vcard:hasTelephone <tel:033-4217456>
+    ] ;
+    dct:issued "2025-04-29"^^xsd:date ;
+    dcat:keyword "rijksmonumenten", "archeologie", "cultureel erfgoed", "landschap", "kunst"@nl ;
+    dcat:theme 
+      <http://standaarden.overheid.nl/owms/terms/Onderzoek_en_wetenschap> ,
+      <http://standaarden.overheid.nl/owms/terms/Cultuur_(thema)> ,
+      <http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening> ,
+      <http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur> ,
+      <http://standaarden.overheid.nl/owms/terms/Natuur-_en_landschapsbeheer> ,
+      <http://standaarden.overheid.nl/owms/terms/Bodem> ,
+      <http://standaarden.overheid.nl/owms/terms/Kunst_(thema)> ;
+    dcat:dataset 
+      <https://linkeddata.cultureelerfgoed.nl/rce/cho> ,
+      <https://linkeddata.cultureelerfgoed.nl/thesauri/cht> ,
+      <https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister> ,
+      <https://linkeddata.cultureelerfgoed.nl/graph/image> ,
+      <https://linkeddata.cultureelerfgoed.nl/graph/beeldbank> ,
+      <https://linkeddata.cultureelerfgoed.nl/graph/bibliotheek> ,
+      <https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek> ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint van de RCE Datasetcatalogus"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/datacatalog/services/datacatalog/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/rce/cho>
+    ] .
+}
+
+<https://linkeddata.cultureelerfgoed.nl/rce/cho> {
+  <https://linkeddata.cultureelerfgoed.nl/rce/cho>
+    a dcat:Dataset ;
+    dct:title "Cultuurhistorische Objecten (CHO)"@nl ;
+    dct:description "Dataset met informatie over rijksmonumenten, werelderfgoed, stads- en dorpsgezichten en archeologische sites."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2022-01-01"^^xsd:date ;
+    dct:modified "2025-04-29"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://linkeddata.cultureelerfgoed.nl/rce/cho> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/TRIG> ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/>
+    ] ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint voor Cultuurhistorische Objecten (CHO)"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/services/cho/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/rce/cho>
+    ] .
+}
+
+<https://linkeddata.cultureelerfgoed.nl/thesauri/cht> {
+  <https://linkeddata.cultureelerfgoed.nl/thesauri/cht>
+    a dcat:Dataset ;
+    dct:title "Cultureel-Historische Thesaurus"@nl ;
+    dct:description "De Cultureel-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2021-06-01"^^xsd:date ;
+    dct:modified "2025-04-29"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://linkeddata.cultureelerfgoed.nl/thesauri/cht> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/>
+    ] ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint voor Cultureel-Historische Thesaurus (CHT)"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/thesauri/cht/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/thesauri/cht>
+    ] .
+}
+
+<https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister> {
+  <https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister>
+    a dcat:Dataset ;
+    dct:title "Archeologisch Basisregister"@nl ;
+    dct:description "Het Archeologisch Basisregister bevat termen die gebruikt worden in de Nederlandse archeologische praktijk, zoals vondstcategorieën, materiaalsoorten en bewerkingswijzen."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2021-06-01"^^xsd:date ;
+    dct:modified "2025-04-29"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/>
+    ] ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint voor Archeologisch Basisregister"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/thesauri/archeologischbasisregister/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister>
+    ] .
+}
+# Graph: linked open data subset
+<https://linkeddata.cultureelerfgoed.nl/graph/image> {
+  <https://linkeddata.cultureelerfgoed.nl/graph/image>
+    a dcat:Dataset ;
+    dct:title "Beeldbank RCE (linked open data deelset)"@nl ;
+    dct:description "Een selectie van erfgoedgerelateerde afbeeldingen van de RCE, beschikbaar als Linked Open Data."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2023-01-01"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:landingPage <https://beeldbank.cultureelerfgoed.nl> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://linkeddata.cultureelerfgoed.nl/rce/afbeeldingen2> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/>
+    ] ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint voor Beeldbank LOD-deelset"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/afbeeldingen2/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/graph/image>
+    ] .
+}
+# Graph: volledige beeldbank via OAI-PMH
+<https://linkeddata.cultureelerfgoed.nl/graph/beeldbank> {
+  <https://linkeddata.cultureelerfgoed.nl/graph/beeldbank>
+    a dcat:Dataset ;
+    dct:title "Beeldbank RCE (volledige collectie via OAI-PMH)"@nl ;
+    dct:description "De volledige digitale beeldcollectie van de Rijksdienst voor het Cultureel Erfgoed, beschikbaar via OAI-PMH in Europeana Semantic Elements (ESE) formaat."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2023-01-01"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:landingPage <https://beeldbank.cultureelerfgoed.nl> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+      dcat:accessURL <https://maior.memorix.nl/api/oai/rce/key/6fae2ee1-66ab-49ea-acc4-3511e5ecc57f/?verb=ListRecords&metadataPrefix=ese> ;
+      dct:conformsTo <http://www.openarchives.org/OAI/2.0/>
+    ] ;
+      dcat:accessService [
+        a dcat:DataService ;
+        dcat:endpointURL <https://maior.memorix.nl/api/oai/rce/key/6fae2ee1-66ab-49ea-acc4-3511e5ecc57f/> ;
+        dct:description "OAI-PMH endpoint voor volledige harvest van beeldbankrecords."@nl
+    ] .
+}
+# Graph: volledige bibliotheek via OAI-PMH
+<https://linkeddata.cultureelerfgoed.nl/graph/bibliotheek> {
+  <https://linkeddata.cultureelerfgoed.nl/graph/bibliotheek>
+    a dcat:Dataset ;
+    dct:title "Bibliotheek RCE (volledige collectie via OAI-PMH)"@nl ;
+    dct:description "De volledige bibliotheekcatalogus van de RCE, beschikbaar via OAI-PMH in oai_dc formaat."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2023-01-01"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:landingPage <https://catalogus.cultureelerfgoed.nl/search/simple> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://rce.adlibhosting.com/oaiapi/oai.ashx?verb=ListRecords&set=books&metadataPrefix=oai_dc_book> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+      dct:conformsTo <http://www.openarchives.org/OAI/2.0/> 
+	] ;
+      dcat:accessService [
+        a dcat:DataService ;
+        dcat:endpointURL <https://rce.adlibhosting.com/oaiapi/oai.ashx> ;
+        dct:description "OAI-PMH endpoint voor de bibliotheekcatalogus van de RCE"@nl
+    ] .
+}
+# Graph: Linked Open Data subset
+<https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek> {
+  <https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek>
+    a dcat:Dataset ;
+    dct:title "Bibliotheek RCE (linked open data subset)"@nl ;
+    dct:description "Een selectie van de bibliotheekcatalogus van de Rijksdienst voor het Cultureel Erfgoed, beschikbaar als Linked Open Data."@nl ;
+    dct:publisher <https://www.cultureelerfgoed.nl> ;
+    dct:issued "2023-01-01"^^xsd:date ;
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/nl> ;
+    dcat:landingPage <https://www.cultureelerfgoed.nl/onderwerpen/bibliotheek> ;
+    dcat:distribution [
+      a dcat:Distribution ;
+      dcat:accessURL <https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek> ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://creativecommons.org/licenses/by/4.0/>
+    ] ;
+    dcat:service [
+      a dcat:DataService ;
+      dct:title "SPARQL endpoint voor Bibliotheek (LOD-deelset)"@nl ;
+      dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/bibliotheek/sparql> ;
+      dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek>
+    ] .
+}
+
+

@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/rce/cho",
+  "@type": "dcat:Dataset",
+  "dct:identifier": "C7C452E9-B021-432c-B3A7-626EC7068BCB",
+  "dct:title": {
+    "@value": "Cultuurhistorische Objecten (CHO)",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "Dataset met informatie over rijksmonumenten, werelderfgoed, stads- en dorpsgezichten en archeologische sites.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:issued": {
+    "@value": "2022-01-01",
+    "@type": "xsd:date"
+  },
+  "dct:modified": {
+    "@value": "2025-04-29",
+    "@type": "xsd:date"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/nl"
+  },
+  "dcat:keyword": [
+    "rijksmonumenten",
+    "archeologie",
+    "cultureel erfgoed",
+    "landschap",
+    "kunst"
+  ],
+  "dcat:theme": [
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Onderzoek_en_wetenschap"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Cultuur_(thema)"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Natuur-_en_landschapsbeheer"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Bodem"
+    },
+    {
+      "@id": "http://standaarden.overheid.nl/owms/terms/Kunst_(thema)"
+    }
+  ],
+  "dcat:landingPage": {
+    "@id": "https://www.cultureelerfgoed.nl/onderwerpen/rijksmonumenten"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/rce/cho"
+    },
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"
+    },
+    "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "dcat:service": {
+    "@type": "dcat:DataService",
+    "dct:title": {
+      "@value": "SPARQL endpoint voor Cultuurhistorische Objecten (CHO)",
+      "@language": "nl"
+    },
+    "dcat:endpointURL": {
+      "@id": "https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/cho/services/cho/sparql"
+    },
+    "dcat:servesDataset": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/rce/cho"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/catalog",
+  "@type": "dcat:Catalog",
+  "dct:identifier": "C7C452E9-B021-432c-B3A7-626EC7068BCB",
+  "dct:title": {
+    "@value": "RCE Datasetcatalogus",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "Catalogus van datasets gepubliceerd door de Rijksdienst voor het Cultureel Erfgoed.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:creator": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Rijksdienst voor het Cultureel Erfgoed",
+    "foaf:homepage": {
+      "@id": "https://www.cultureelerfgoed.nl"
+    }
+  },
+  "dcat:contactPoint": {
+    "@type": "vcard:Organization",
+    "vcard:fn": "Rijksdienst voor het Cultureel Erfgoed",
+    "vcard:hasEmail": {
+      "@id": "mailto:info@cultureelerfgoed.nl"
+    },
+    "vcard:hasTelephone": {
+      "@id": "tel:033-4217456"
+    }
+  },
+  "dct:issued": {
+    "@value": "2025-04-29",
+    "@type": "xsd:date"
+  },
+  "dcat:keyword": [
+    "rijksmonumenten",
+    "archeologie",
+    "cultureel erfgoed",
+    "landschap",
+    "kunst"
+  ],
+  "dcat:theme": [
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Onderzoek_en_wetenschap" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Cultuur_(thema)" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Ruimtelijke_ordening" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Ruimte_en_infrastructuur" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Natuur-_en_landschapsbeheer" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Bodem" },
+    { "@id": "http://standaarden.overheid.nl/owms/terms/Kunst_(thema)" }
+  ],
+  "dcat:dataset": [
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/rce/cho" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/cht" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/archeologischbasisregister" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/graph/image" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/graph/beeldbank" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/graph/bibliotheek" },
+    { "@id": "https://linkeddata.cultureelerfgoed.nl/rce/bibliotheek" }
+  ],
+  "dcat:service": {
+    "@type": "dcat:DataService",
+    "dct:title": {
+      "@value": "SPARQL endpoint van de RCE Datasetcatalogus",
+      "@language": "nl"
+    },
+    "dcat:endpointURL": {
+      "@id": "https://api.linkeddata.cultureelerfgoed.nl/datasets/rce/datacatalog/services/datacatalog/sparql"
+    },
+    "dcat:servesDataset": {
+      "@id": "https://linkeddata.cultureelerfgoed.nl/rce/cho"
+    }
+  }
+}

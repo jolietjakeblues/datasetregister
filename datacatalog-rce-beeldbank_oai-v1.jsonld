@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "https://linkeddata.cultureelerfgoed.nl/graph/beeldbank",
+  "@type": "dcat:Dataset",
+  "dct:title": {
+    "@value": "Beeldbank RCE (volledige collectie via OAI-PMH)",
+    "@language": "nl"
+  },
+  "dct:description": {
+    "@value": "De volledige digitale beeldcollectie van de Rijksdienst voor het Cultureel Erfgoed, beschikbaar via OAI-PMH in Europeana Semantic Elements (ESE) formaat.",
+    "@language": "nl"
+  },
+  "dct:publisher": {
+    "@id": "https://www.cultureelerfgoed.nl"
+  },
+  "dct:issued": {
+    "@value": "2023-01-01",
+    "@type": "xsd:date"
+  },
+  "dct:language": {
+    "@id": "http://id.loc.gov/vocabulary/iso639-1/nl"
+  },
+  "dcat:landingPage": {
+    "@id": "https://beeldbank.cultureelerfgoed.nl"
+  },
+  "dcat:distribution": {
+    "@type": "dcat:Distribution",
+    "dcat:accessURL": {
+      "@id": "https://maior.memorix.nl/api/oai/rce/key/6fae2ee1-66ab-49ea-acc4-3511e5ecc57f/?verb=ListRecords&metadataPrefix=ese"
+    },
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/XML"
+    },
+    "dct:conformsTo": {
+      "@id": "http://www.openarchives.org/OAI/2.0/"
+    },
+    "dcat:accessService": {
+      "@type": "dcat:DataService",
+      "dcat:endpointURL": {
+        "@id": "https://maior.memorix.nl/api/oai/rce/key/6fae2ee1-66ab-49ea-acc4-3511e5ecc57f/"
+      },
+      "dct:description": {
+        "@value": "OAI-PMH endpoint voor volledige harvest van beeldbankrecords.",
+        "@language": "nl"
+      }
+    }
+  }
+}

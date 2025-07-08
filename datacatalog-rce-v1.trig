@@ -75,8 +75,8 @@
 <https://linkeddata.cultureelerfgoed.nl/thesauri/cht> {
   <https://linkeddata.cultureelerfgoed.nl/thesauri/cht>
     a dcat:Dataset ;
-    dct:title "Cultureel-Historische Thesaurus"@nl ;
-    dct:description "De Cultureel-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland."@nl ;
+    dct:title "Cultuur-Historische Thesaurus"@nl ;
+    dct:description "De Cultuur-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland."@nl ;
     dct:publisher <https://www.cultureelerfgoed.nl> ;
     dct:issued "2021-06-01"^^xsd:date ;
     dct:modified "2025-04-29"^^xsd:date ;
@@ -89,7 +89,7 @@
     ] ;
     dcat:service [
       a dcat:DataService ;
-      dct:title "SPARQL endpoint voor Cultureel-Historische Thesaurus (CHT)"@nl ;
+      dct:title "SPARQL endpoint voor Cultuur-Historische Thesaurus (CHT)"@nl ;
       dcat:endpointURL <https://api.linkeddata.cultureelerfgoed.nl/datasets/thesauri/cht/sparql> ;
       dcat:servesDataset <https://linkeddata.cultureelerfgoed.nl/thesauri/cht>
     ] .

@@ -25,7 +25,7 @@ Deze catalogus dient twee functies:
 | `datacatalog-rce-v1.trig`                      | Volledige catalogus in TriG (meerdere named graphs) |
 | `datacatalog-rce-v1.jsonld`                    | Catalogus in JSON-LD (DCAT-AP NL)                 |
 | `datacatalog-rce-cho-v1.jsonld`                | Dataset CHO (Cultuurhistorische Objecten)         |
-| `datacatalog-rce-cht-v1.jsonld`                | Dataset CHT (Cultureel-Historische Thesaurus)     |
+| `datacatalog-rce-cht-v1.jsonld`                | Dataset CHT (Cultuur-Historische Thesaurus)     |
 | `datacatalog-rce-abr-v1.jsonld`                | Dataset ABR (Archeologisch Basisregister)         |
 | `datacatalog-rce-beeldbank_ld-v1.jsonld`       | Beeldbank subset als Linked Open Data             |
 | `datacatalog-rce-beeldbank_oai-v1.jsonld`      | Beeldbank via OAI-PMH                             |

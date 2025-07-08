@@ -7,11 +7,11 @@
   "@id": "https://linkeddata.cultureelerfgoed.nl/thesauri/cht",
   "@type": "dcat:Dataset",
   "dct:title": {
-    "@value": "Cultureel-Historische Thesaurus",
+    "@value": "Cultuur-Historische Thesaurus",
     "@language": "nl"
   },
   "dct:description": {
-    "@value": "De Cultureel-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland.",
+    "@value": "De Cultuur-Historische Thesaurus (CHT) biedt termen die gebruikt worden voor het beschrijven van erfgoedobjecten in Nederland.",
     "@language": "nl"
   },
   "dct:publisher": {
@@ -43,7 +43,7 @@
   "dcat:service": {
     "@type": "dcat:DataService",
     "dct:title": {
-      "@value": "SPARQL endpoint voor Cultureel-Historische Thesaurus (CHT)",
+      "@value": "SPARQL endpoint voor Cultuur-Historische Thesaurus (CHT)",
       "@language": "nl"
     },
     "dcat:endpointURL": {
